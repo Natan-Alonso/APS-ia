@@ -1,6 +1,5 @@
 import socket
 import threading
-import emoji
 
 ServerIP = input("Server IP: ")
 PORT = int(input("Port: "))
@@ -10,7 +9,6 @@ try:
     username = input('Enter a username: ')
     client.connect((ServerIP,PORT))
     print(f'Connected Successfully to {ServerIP}:{PORT}')
-    print(emoji.emojize(":grinning face:"))
 except:
     print(f'ERROR: Please review your input: {ServerIP}:{PORT}')
 
